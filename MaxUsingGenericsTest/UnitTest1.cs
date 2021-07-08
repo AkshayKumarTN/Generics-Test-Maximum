@@ -10,31 +10,31 @@ namespace MaxUsingGenericsTest
         [TestMethod]
         public void TestMethod1()
         {
-            //Max Number at 1st Position
-            float firstValue = 30.5f, secondValue = 20.5f, thirdValue = 10.5f;
-            float expected = 30.5f;
+            //Max String at 1st Position
+            string firstValue = "Peach", secondValue = "Banana", thirdValue = "Apple";
+            string expected = "Peach";
             FindMaximum find = new FindMaximum();
-            float actual = find.MaximumValue(firstValue, secondValue, thirdValue);
+            string actual = find.MaximumValue(firstValue, secondValue, thirdValue);
             Assert.AreEqual(expected, actual);
         }
         [TestMethod]
         public void TestMethod2()
         {
-            //Max Number at 2nd Position
-            float firstValue = 20.5f, secondValue = 30.5f, thirdValue = 10.5f;
-            float expected = 30.5f;
+            //Max String at 2nd Position
+            string firstValue = "Banana", secondValue = "Peach", thirdValue = "Apple";
+            string expected = "Peach";
             FindMaximum find = new FindMaximum();
-            float actual = find.MaximumValue(firstValue, secondValue, thirdValue);
+            string actual = find.MaximumValue(firstValue, secondValue, thirdValue);
             Assert.AreEqual(expected, actual);
         }
         [TestMethod]
         public void TestMethod3()
         {
-            //Max Number at 3rd Position
-            float firstValue = 20.5f, secondValue = 10.5f, thirdValue = 30.5f;
-            float expected = 30.5f;
+            //Max String at 3rd Position
+            string firstValue = "Apple", secondValue = "Banana", thirdValue = "Peach";
+            string expected = "Peach";
             FindMaximum find = new FindMaximum();
-            float actual = find.MaximumValue(firstValue, secondValue, thirdValue);
+            string actual = find.MaximumValue(firstValue, secondValue, thirdValue);
             Assert.AreEqual(expected, actual);
         }
 
