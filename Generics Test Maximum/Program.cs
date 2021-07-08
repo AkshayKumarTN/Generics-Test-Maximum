@@ -16,9 +16,10 @@ namespace Generics_Test_Maximum
             FindMaximum<float> find2 = new FindMaximum<float>(floatArray);
             FindMaximum<string> find3 = new FindMaximum<string>(stringArray);
 
-            Console.WriteLine("Maximum Integer Number : " + find1.FindMaxValue());
-            Console.WriteLine("Maximum Float Number : " + find2.FindMaxValue());
-            Console.WriteLine("Maximum String : " + find3.FindMaxValue());
+            find1.PrintMaxValue();
+            find2.PrintMaxValue();
+            find3.PrintMaxValue();
+
         }
     }
 }
